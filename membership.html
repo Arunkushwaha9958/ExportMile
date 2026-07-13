@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership Plans — ExportMile</title>
+<meta name="description" content="Choose the ExportMile membership plan that fits your export business — from free listings to enterprise-grade trade tools.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <span><i data-lucide="globe" style="width:12px;height:12px"></i> <b>195+</b> Countries Connected</span>
+      <span><i data-lucide="check-circle-2" style="width:12px;height:12px"></i> Verified Buyers</span>
+      <span><i data-lucide="file-check-2" style="width:12px;height:12px"></i> IEC Assistance</span>
+      <span><i data-lucide="headset" style="width:12px;height:12px"></i> Trade Experts</span>
+    </div>
+    <div class="topbar-right">
+      <select class="sel-mini"><option>EN</option><option>HI</option><option>AR</option><option>FR</option></select>
+      <select class="sel-mini"><option>USD</option><option>INR</option><option>EUR</option><option>AED</option></select>
+      <span class="divider"></span>
+      <a href="https://wa.me/919667999137"><i data-lucide="message-circle" style="width:13px;height:13px"></i> WhatsApp</a>
+      <a href="mailto:support@exportmile.com"><i data-lucide="mail" style="width:13px;height:13px"></i> support@exportmile.com</a>
+      <a href="tel:+919667999137"><i data-lucide="phone" style="width:13px;height:13px"></i> +91 9667999137</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="siteNav">
+  <div class="wrap navrow">
+    <a href="index.html" class="logo">
+      <div class="logo-chip">
+        <img src="export.png" alt="ExportMile Logo">
+      </div>
+    </a>
+
+    <nav class="navlinks">
+      <div class="navitem">
+        <button class="top-link">Products <i data-lucide="chevron-down"></i></button>
+        <div class="megamenu" id="megaCategories"></div>
+      </div>
+      <a href="index.html#categories" class="top-link">Buy Leads</a>
+      <a href="contactus.html" class="top-link">About Us</a>
+      <a href="index.html#countries" class="top-link">Countries</a>
+      <a href="index.html#services" class="top-link">Export Services</a>
+      <a href="membership.html" class="top-link" style="color:var(--blue);">Membership</a>
+      <a href="contactus.html" class="top-link">Submit Complaint</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search"><i data-lucide="search"></i></button>
+      <button class="icon-btn" aria-label="Notifications"><i data-lucide="bell"></i><span class="dot-badge"></span></button>
+      <a href="#" class="btn btn-ghost">Login</a>
+      <a href="#" class="btn btn-line">Sign Up</a>
+      <a href="contactus.html" class="btn btn-dark"><span>Post Requirement</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU DRAWER ================= -->
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+<aside class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <div class="logo-chip"><img src="export.png" alt="ExportMile Logo"></div>
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu"><i data-lucide="x"></i></button>
+  </div>
+  <div class="mobile-menu-body">
+    <nav class="mobile-menu-links">
+      <button class="mm-toggle" data-target="mobileCategoryList">
+        Products <i data-lucide="chevron-down" class="chev"></i>
+      </button>
+      <div class="mobile-submenu" id="mobileCategoryList"></div>
+
+      <a href="index.html#categories">Buy Leads</a>
+      <a href="contactus.html">About Us</a>
+      <a href="index.html#countries">Countries</a>
+      <a href="index.html#services">Export Services</a>
+      <a href="membership.html" style="color:var(--blue);">Membership</a>
+      <a href="contactus.html">Submit Complaint</a>
+    </nav>
+    <div class="mobile-menu-divider"></div>
+    <nav class="mobile-menu-links">
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </nav>
+  </div>
+  <div class="mobile-menu-foot">
+    <a href="contactus.html" class="btn btn-dark">Post Requirement</a>
+  </div>
+</aside>
+
+<!-- ================= MEMBERSHIP ================= -->
+<section id="membership" style="background:var(--mist); padding-top:56px;">
+  <div class="wrap">
+    <div class="sec-head reveal" style="justify-content:center; text-align:center; flex-direction:column; align-items:center;">
+      <span class="sec-eyebrow">Membership</span>
+      <h2 class="sec-title" style="max-width:600px;">Plans built for every stage of export growth</h2>
+      <p class="sec-sub">Pick a plan that matches how many buyers you want to reach and how much support you need along the way.</p>
+    </div>
+    <div class="mem-grid reveal" id="memGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h3>Ready to find your next buyer?</h3>
+        <p>Join 500,000+ verified exporters already growing globally with ExportMile.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contactus.html" class="btn btn-lg" style="background:#fff; color:var(--ink);">Post a Requirement</a>
+        <a href="contactus.html" class="btn btn-lg" style="background:rgba(255,255,255,.16); color:#fff; border:1px solid rgba(255,255,255,.4);">Talk to an Expert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo-wrap">
+          <div class="foot-logo-chip">
+            <img src="export.png" alt="ExportMile Logo">
+          </div>
+        </div>
+        <p class="foot-desc">The premium B2B export marketplace connecting Indian manufacturers and exporters with verified importers across 195+ countries.</p>
+        <div class="foot-social">
+          <!-- <a href="#"><i data-lucide="linkedin"></i></a>
+          <a href="#"><i data-lucide="twitter"></i></a>
+          <a href="#"><i data-lucide="instagram"></i></a>
+          <a href="#"><i data-lucide="facebook"></i></a> -->
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Marketplace</h5>
+        <ul>
+          <li><a href="index.html#categories">All Categories</a></li>
+          <li><a href="index.html#categories">Buy Leads</a></li>
+          <li><a href="#">Exporters Directory</a></li>
+          <li><a href="#">Importers Directory</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Export Services</h5>
+        <ul>
+          <li><a href="index.html#services">IEC Registration</a></li>
+          <li><a href="index.html#services">Export Documentation</a></li>
+          <li><a href="index.html#services">Freight Forwarding</a></li>
+          <li><a href="index.html#services">Trade Fair Support</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="contactus.html">About Us</a></li>
+          <li><a href="membership.html">Membership Plans</a></li>
+          <li><a href="#">Blog & Guides</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="contactus.html">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ExportMile Global Trade Pvt. Ltd. All rights reserved.</span>
+      <div class="foot-bottom-links">
+        <a href="#">Sitemap</a><a href="#">Cookies</a><a href="#">IEC: AAAA00000A</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

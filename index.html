@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExportMile — Find Verified Importers From 195+ Countries</title>
+<meta name="description" content="ExportMile connects Indian exporters with verified importers across 195+ countries. AI-powered sourcing, verified trade leads, and end-to-end export services.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <span><i data-lucide="globe" style="width:12px;height:12px"></i> <b>195+</b> Countries Connected</span>
+      <span><i data-lucide="check-circle-2" style="width:12px;height:12px"></i> Verified Buyers</span>
+      <span><i data-lucide="file-check-2" style="width:12px;height:12px"></i> IEC Assistance</span>
+      <span><i data-lucide="headset" style="width:12px;height:12px"></i> Trade Experts</span>
+    </div>
+    <div class="topbar-right">
+      <select class="sel-mini"><option>EN</option><option>HI</option><option>AR</option><option>FR</option></select>
+      <select class="sel-mini"><option>USD</option><option>INR</option><option>EUR</option><option>AED</option></select>
+      <span class="divider"></span>
+      <a href="https://wa.me/919667999137"><i data-lucide="message-circle" style="width:13px;height:13px"></i> WhatsApp</a>
+      <a href="mailto:support@exportmile.com"><i data-lucide="mail" style="width:13px;height:13px"></i> support@exportmile.com</a>
+      <a href="tel:+919667999137"><i data-lucide="phone" style="width:13px;height:13px"></i> +91 9667999137</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="siteNav">
+  <div class="wrap navrow">
+    <a href="index.html" class="logo">
+      <div class="logo-chip">
+        <img src="export.png" alt="ExportMile Logo">
+      </div>
+    </a>
+
+    <nav class="navlinks">
+      <div class="navitem">
+        <button class="top-link">Products <i data-lucide="chevron-down"></i></button>
+        <div class="megamenu" id="megaCategories"></div>
+      </div>
+      <a href="#categories" class="top-link">Buy Leads</a>
+      <a href="contactus.html" class="top-link">About Us</a>
+      <a href="#countries" class="top-link">Countries</a>
+      <a href="#services" class="top-link">Export Services</a>
+      <a href="membership.html" class="top-link">Membership</a>
+      <a href="contactus.html" class="top-link">Submit Complaint</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search"><i data-lucide="search"></i></button>
+      <button class="icon-btn" aria-label="Notifications"><i data-lucide="bell"></i><span class="dot-badge"></span></button>
+      <a href="#" class="btn btn-ghost">Login</a>
+      <a href="#" class="btn btn-line">Sign Up</a>
+      <a href="contactus.html" class="btn btn-dark"><span>Post Requirement</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU DRAWER ================= -->
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+<aside class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <div class="logo-chip"><img src="export.png" alt="ExportMile Logo"></div>
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu"><i data-lucide="x"></i></button>
+  </div>
+  <div class="mobile-menu-body">
+    <nav class="mobile-menu-links">
+      <button class="mm-toggle" data-target="mobileCategoryList">
+        Products <i data-lucide="chevron-down" class="chev"></i>
+      </button>
+      <div class="mobile-submenu" id="mobileCategoryList"></div>
+
+      <a href="#categories">Buy Leads</a>
+      <a href="contactus.html">About Us</a>
+      <a href="#countries">Countries</a>
+      <a href="#services">Export Services</a>
+      <a href="membership.html">Membership</a>
+      <a href="contactus.html">Submit Complaint</a>
+    </nav>
+    <div class="mobile-menu-divider"></div>
+    <nav class="mobile-menu-links">
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </nav>
+  </div>
+  <div class="mobile-menu-foot">
+    <a href="contactus.html" class="btn btn-dark">Post Requirement</a>
+  </div>
+</aside>
+
+<!-- ================= HERO ================= -->
+<section class="hero" style="padding-top:76px;">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="pip"><i data-lucide="sparkles"></i></span>
+        AI-Powered Global B2B Trade Platform
+      </div>
+      <h1>Find Verified <span class="hl">Importers</span><br>From 195+ Countries</h1>
+      <p class="sub">Connect with verified buyers, exporters and importers worldwide. Grow your exports with AI-powered sourcing, trusted trade partners, and end-to-end export services — built for Indian exporters.</p>
+
+      <!-- SEARCH CARD -->
+      <div class="search-card">
+        <div class="search-field grow">
+          <div class="sf-inner">
+            <i data-lucide="search"></i>
+            <input type="text" placeholder="Search products, suppliers, HS codes…">
+          </div>
+        </div>
+        <div class="search-field" id="countryField">
+          <div class="sf-inner" id="countryTrigger">
+            <i data-lucide="globe-2"></i>
+            <span class="val" id="countryVal">All Countries</span>
+            <i data-lucide="chevron-down" class="chev"></i>
+          </div>
+          <div class="dropdown-panel" id="countryPanel"></div>
+        </div>
+        <div class="search-field" id="categoryField">
+          <div class="sf-inner" id="categoryTrigger">
+            <i data-lucide="layout-grid"></i>
+            <span class="val" id="categoryVal">All Categories</span>
+            <i data-lucide="chevron-down" class="chev"></i>
+          </div>
+          <div class="dropdown-panel" id="categoryPanel"></div>
+        </div>
+        <button class="search-btn">Search Suppliers <i data-lucide="arrow-right" style="width:15px;height:15px"></i></button>
+      </div>
+
+      <div class="hero-chiprow" id="chipRow">
+        <span class="lbl">Trending:</span>
+      </div>
+    </div>
+
+    <!-- VISUAL -->
+    <div class="hero-visual">
+      <div class="globe-wrap">
+        <svg viewBox="0 0 400 400" fill="none">
+          <circle cx="200" cy="200" r="150" stroke="#3A3F72" stroke-width="1" opacity="0.5"/>
+          <circle cx="200" cy="200" r="112" stroke="#3A3F72" stroke-width="1" opacity="0.4"/>
+          <ellipse cx="200" cy="200" rx="150" ry="55" stroke="#2C3060" stroke-width="1"/>
+          <ellipse cx="200" cy="200" rx="150" ry="110" stroke="#2C3060" stroke-width="1"/>
+          <line x1="50" y1="200" x2="350" y2="200" stroke="#2C3060" stroke-width="1"/>
+          <path d="M120 150 Q200 60 300 130" stroke="#1A45FF" stroke-width="1.6" class="route-dash" opacity="0.9"/>
+          <path d="M120 150 Q140 260 260 290" stroke="#FF2B2B" stroke-width="1.6" class="route-dash" opacity="0.9"/>
+          <path d="M120 150 Q220 200 90 270" stroke="#8C6BFF" stroke-width="1.6" class="route-dash" opacity="0.9"/>
+          <circle cx="120" cy="150" r="5" fill="#FF9B2B"/>
+          <circle cx="120" cy="150" r="5" fill="#FF9B2B" class="pulse-dot"/>
+          <circle cx="300" cy="130" r="4" fill="#1A45FF"/>
+          <circle cx="260" cy="290" r="4" fill="#FF2B2B"/>
+          <circle cx="90" cy="270" r="4" fill="#8C6BFF"/>
+        </svg>
+      </div>
+      <div class="rv-card rv-1">
+        <div class="ic" style="background:#EAF0FF;">📦</div>
+        <div><div class="t1">New RFQ</div><div class="t2">Textiles · UAE</div></div>
+      </div>
+      <div class="rv-card rv-2">
+        <div class="ic" style="background:#FFEAEA;">✅</div>
+        <div><div class="t1">Verified</div><div class="t2">1,204 today</div></div>
+      </div>
+      <div class="rv-card rv-3">
+        <div class="ic" style="background:#EFEAFF;">🌍</div>
+        <div><div class="t1">Live shipment</div><div class="t2">Mumbai → Rotterdam</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="stats-band">
+  <div class="wrap" style="padding-top:44px; padding-bottom:44px;">
+    <div class="stats-grid" id="statsGrid"></div>
+  </div>
+</div>
+
+<!-- ================= CATEGORIES ================= -->
+<section id="categories">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="sec-eyebrow">100+ Product Categories</span>
+        <h2 class="sec-title">Source from every corner of Indian industry</h2>
+        <p class="sec-sub">From agriculture to advanced machinery — verified exporters across every major category, updated daily.</p>
+      </div>
+      <a href="#" class="see-all">Browse all categories <i data-lucide="arrow-right"></i></a>
+    </div>
+    <div class="cat-grid reveal" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- ================= COUNTRIES ================= -->
+<section id="countries" style="background:var(--mist);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="sec-eyebrow">Global Reach</span>
+        <h2 class="sec-title">Top importing countries on ExportMile</h2>
+        <p class="sec-sub">Live trade volumes and verified buyer counts across our 195+ country network.</p>
+      </div>
+      <a href="#" class="see-all">View all countries <i data-lucide="arrow-right"></i></a>
+    </div>
+    <div class="country-grid reveal" id="countryGrid"></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="sec-eyebrow">Export Services</span>
+        <h2 class="sec-title">Everything you need to go global, in one place</h2>
+        <p class="sec-sub">From your first IEC registration to your hundredth shipment — our trade experts handle it.</p>
+      </div>
+    </div>
+    <div class="svc-grid reveal" id="svcGrid"></div>
+  </div>
+</section>
+<!-- ================= CTA ================= -->
+<section>
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h3>Ready to find your next buyer?</h3>
+        <p>Join 5000+ verified exporters already growing globally with ExportMile.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contactus.html" class="btn btn-lg" style="background:#fff; color:var(--ink);">Post a Requirement</a>
+        <a href="contactus.html" class="btn btn-lg" style="background:rgba(255,255,255,.16); color:#fff; border:1px solid rgba(255,255,255,.4);">Talk to an Expert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo-wrap">
+          <div class="foot-logo-chip">
+            <img src="export.png" alt="ExportMile Logo">
+          </div>
+        </div>
+        <p class="foot-desc">The premium B2B export marketplace connecting Indian manufacturers and exporters with verified importers across 195+ countries.</p>
+        <div class="foot-social">
+          <!-- <a href="#"><i data-lucide="linkedin"></i></a>
+          <a href="#"><i data-lucide="twitter"></i></a>
+          <a href="#"><i data-lucide="instagram"></i></a>
+          <a href="#"><i data-lucide="facebook"></i></a> -->
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Marketplace</h5>
+        <ul>
+          <li><a href="#categories">All Categories</a></li>
+          <li><a href="#categories">Buy Leads</a></li>
+          <li><a href="#">Advertise with Us</a></li>
+          <li><a href="#">Seller</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Export Services</h5>
+        <ul>
+          <li><a href="#services">IEC Registration</a></li>
+          <li><a href="#services">Export Documentation</a></li>
+          <li><a href="#services">Freight Forwarding</a></li>
+          <li><a href="#services">Trade Fair Support</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="contactus.html">About Us</a></li>
+          <li><a href="membership.html">Membership Plans</a></li>
+          <li><a href="#">Blog & Guides</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="contactus.html">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 ExportMile Global Trade Pvt. Ltd. All rights reserved.</span>
+      <div class="foot-bottom-links">
+        <a href="#">Sitemap</a><a href="#">Cookies</a><a href="#">IEC: AAAA00000A</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
